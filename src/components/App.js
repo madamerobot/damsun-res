@@ -56,35 +56,8 @@ class App extends Component {
 					<div className="logo">
 						<svg width="640" height="480" className="sunsvg">
 							 <g>
-									<title>Sun Logo</title>
-									
-									<text xml:space="preserve" textAnchor="middle" fontFamily="Raleway" 
-										fontSize="24" id="svg_3" y="162.64204" x="253.46022" 
-										strokeOpacity="0" strokeLinecap="null" 
-										strokeLinejoin="null" strokeDasharray="null" 
-										strokeWidth="0" stroke="#000000" 
-										fill="#000000">The Amsterdam
-									</text>
-
-									<ellipse strokeOpacity="0" ry="93" rx="92" id="svg_1" cy="173.64204" 
-									cx="251.46022" strokeLinecap="null" strokeLinejoin="null" 
-									strokeDasharray="null" strokeWidth="5" stroke="#000000" 
-									fill="#ffff00"/>
-									
-									<text id="svg_4" xml:space="preserve" textAnchor="middle" 
-									fontFamily="Sans-serif" fontSize="24" y="174.82314" x="250.47512" 
-									strokeOpacity="0" strokeLinecap="null" strokeLinejoin="null" 
-									strokeDasharray="null" strokeWidth="0" stroke="#000000" 
-									fill="#000000">The Amsterdam
-									</text>
-
-									<text xml:space="preserve" textAnchor="middle" 
-									fontFamily="Sans-serif" fontSize="24" id="svg_5" 
-									y="198.64204" x="247.46022" strokeOpacity="0" 
-									strokeLinecap="null" strokeLinejoin="null" 
-									strokeDasharray="null" strokeWidth="0" 
-									stroke="#000000" fill="#000000">Sun Machine
-									</text>
+									<title>Sun Logo</title>							
+									<ellipse stroke-opacity="0" ry="93" rx="92" id="svg_1" cy="153.64204" cx="268.46022" strokeLinecap="null" strokeLinejoin="null" strokeDasharray="null" strokeWidth="5" stroke="#000000" fill="#ffff00"/>
 							 </g>
 						</svg>
 				</div>
