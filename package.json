@@ -23,7 +23,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/madamerobot/damsun-res.git"
   },
   "keywords": [
     "amsterdam",
@@ -34,7 +34,7 @@
   "author": "Valerie Fuchs",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/madamerobot/damsun-res/issues"
   },
   "homepage": ""
 }
