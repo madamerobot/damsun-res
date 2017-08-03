@@ -53,15 +53,15 @@ class App extends Component {
 							</div>
 					</div>
 
-					<div className="logo">
+				</div>
+
+				<div className="logo">
 						<svg width="640" height="480" className="sunsvg">
 							 <g>
 									<title>Sun Logo</title>							
-									<ellipse stroke-opacity="0" ry="93" rx="92" id="svg_1" cy="153.64204" cx="268.46022" strokeLinecap="null" strokeLinejoin="null" strokeDasharray="null" strokeWidth="5" stroke="#000000" fill="#ffff00"/>
+									<ellipse stroke-opacity="0" ry="93" rx="92" id="svg_1" cy="153.64204" cx="268.46022" strokeLinecap="null" strokeLinejoin="null" strokeDasharray="null" strokeWidth="5" stroke="#ffff00" fill="#ffff00"/>
 							 </g>
 						</svg>
-				</div>
-
 				</div>
 			</div>
 		);
