@@ -52,16 +52,17 @@ class App extends Component {
 								<Knob name="Pricelevel" value={this.state.price} onChange={this.changePrice}/>
 							</div>
 					</div>
+
 				</div>
 
 				<div className="logo">
-					<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+					<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" className="sunsvg">
 					 <g>
-						<title>Layer 1</title>
-						<text xml:space="preserve" text-anchor="middle" font-family="Raleway" font-size="24" id="svg_3" y="162.64204" x="253.46022" stroke-opacity="0" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#000000">The Amsterdam</text>
-						<ellipse stroke-opacity="0" ry="93" rx="92" id="svg_1" cy="173.64204" cx="251.46022" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#000000" fill="#ffff00"/>
-						<text id="svg_4" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="174.82314" x="250.47512" stroke-opacity="0" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#000000">The Amsterdam</text>
-						<text xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" id="svg_5" y="198.64204" x="247.46022" stroke-opacity="0" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#000000">Sun Machine</text>
+							<title>Layer 1</title>
+							<text xml:space="preserve" text-anchor="middle" font-family="Raleway" font-size="24" id="svg_3" y="162.64204" x="253.46022" stroke-opacity="0" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#000000">The Amsterdam</text>
+							<ellipse stroke-opacity="0" ry="93" rx="92" id="svg_1" cy="173.64204" cx="251.46022" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#000000" fill="#ffff00"/>
+							<text id="svg_4" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="174.82314" x="250.47512" stroke-opacity="0" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#000000">The Amsterdam</text>
+							<text xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" id="svg_5" y="198.64204" x="247.46022" stroke-opacity="0" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#000000">Sun Machine</text>
 					 </g>
 					</svg>
 				</div>
