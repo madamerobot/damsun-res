@@ -28,11 +28,11 @@ class Result extends Component {
 			}
 		});
 		if(results.length<=0){
-			return <h1>Sorry, you are too picky. No results found.</h1>
+			return <p>Sorry, you are too picky. No results found.</p>
 		}
 		return results.map ((results) => {
 			return (
-					<h3 key={results}>{results}📍</h3>
+					<p key={results}>{results}📍</p>
 			)
 		});
 	}
