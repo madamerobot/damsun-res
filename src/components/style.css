@@ -93,7 +93,7 @@ h1 {
 	padding: 80px;
 }
 
-/*FLEX ITEM FOR .MACHINEWRAPPER*/
+/*FLEX ITEM FROM .MACHINEWRAPPER*/
 .logo {
 	-webkit-box-flex: 1;
 	    -ms-flex: 1;
@@ -101,6 +101,20 @@ h1 {
 	text-align: center;
 	max-width: 200px;
 	min-width: 180px;
+}
+
+/*CHILDREN OF .LOGO*/
+.logotitle {
+	text-align: center;
+	z-index: 3;
+	position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+}
+
+/*CHILDREN OF .LOGO*/
+.sunsvg {
+	z-index: 1;
+	position: relative;
 }
 
 /*FLEX ITEM FROM .MACHINEWRAPPER*/
@@ -134,6 +148,7 @@ h1 {
 	width: 80%;
 	background-color: white;
 	font-family: Raleway;
+	text-align: center;
 }
 
 /*CHILD OF .RESULTPAPER*/
