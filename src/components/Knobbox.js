@@ -84,7 +84,7 @@ class Knobbox extends Component {
 
 	handleChange(event){
 		const value = event.target.value;
-		this.props.onChange(value);
+		this.state.onChange(value);
 	}
 
 	render() {
