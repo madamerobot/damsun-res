@@ -51,4 +51,4 @@ class Knobbox extends Component {
 	}
 }
 
-export default App;
+export default Knobbox;
