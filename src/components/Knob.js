@@ -84,6 +84,11 @@ class Knob extends Component {
 		this.updateValue(event);
 	}
 
+	handleChange(event){
+		const value = event.target.value;
+		this.props.onChange(value);
+	}
+
 	render(){
 		
 		const {min, max, step, size, fullAngle} = this.state

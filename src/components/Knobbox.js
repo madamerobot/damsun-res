@@ -10,11 +10,6 @@ import DATA from '../sunspots'
 
 class Knobbox extends Component {
 
-	handleChange(event){
-		const value = event.target.value;
-		this.props.onChange(value);
-	}
-	
 	render() {
 		return (
 			
