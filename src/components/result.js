@@ -32,7 +32,11 @@ class Result extends Component {
 		}
 		return results.map ((results) => {
 			return (
-				<h1 key={results}>{results}📍</h1>
+				<div>
+					<h1>Finding your hangoutspot within the blink of an eye</h1><br>
+					<h1>Your match:</h1><br>
+					<h1 key={results}>{results}📍</h1>
+				</div>
 			)
 		});
 	}
