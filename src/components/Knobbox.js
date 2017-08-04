@@ -101,10 +101,12 @@ class Knobbox extends Component {
 								
 				<Knob name={this.props.name} value={this.props.value} onChange={this.props.onChange} rotation={rotation}/>
 				
-				<div className="label">{this.props.name}</div>
-				
-				<div className="Slider">
-					<input type="range" value={this.props.value} min="0" max="5" onChange={this.handleChange}/>
+				<div className="labelwrapper">
+					<div className="label">{this.props.name}</div>
+					
+					<div className="Slider">
+						<input type="range" value={this.props.value} min="0" max="5" onChange={this.handleChange}/>
+					</div>
 				</div>
 
 			</div>

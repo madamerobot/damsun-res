@@ -42,8 +42,6 @@ class App extends Component {
 				<div className="machinearea">
 					
 					<div className="resultpaper">
-						<h1>Find your hangout spot within the blink of an eye</h1>
-						<h1>Your match:</h1>
 						<div className="results">
 							<Result data={DATA} tourist={this.state.tourist} price={this.state.price} proof={this.state.proof} />
 						</div>
@@ -60,15 +58,15 @@ class App extends Component {
 				</div>
 
 				<div className="logo">
-					
-					<div class="logotitle">
-						<h1>The Amsterdam Sun Machine</h1>
-					</div>
-
 					<svg viewBox="0 0 49.7 49.7" className="sunsvg">
 						 <g>
 								<title>Sun Logo</title>							
 								<circle cx="24.85" cy="24.85" r="24.85" fill="#ffff00"/>
+						 </g>
+						 <g>
+							<foreignObject width="49.7" height="49.7">
+								<p className="logotitle">The Amsterdam Sun Machine</p>
+							 </foreignObject>
 						 </g>
 					</svg>
 

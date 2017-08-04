@@ -61,6 +61,10 @@ h1 {
 	.machinearea {
 		max-width: auto !important;
 	}
+
+	.knobsvg {
+		display: none;
+	}
 }
 
 /*FLEX CONTAINER FOR .MACHINEWRAPPER*/
@@ -101,20 +105,22 @@ h1 {
 	text-align: center;
 	max-width: 200px;
 	min-width: 180px;
+	max-height: 200px;
+	min-height: 180px;
+	/*height: 100%;*/
 }
 
 /*CHILDREN OF .LOGO*/
+.sunsvg{
+	/*position: relative;*/
+}
+
+/*FOREIGN OBJECT IN SUNSVG*/
 .logotitle {
-	text-align: center;
-	z-index: 3;
-	position: absolute;
-    left: 0; top: 0; right: 0; bottom: 0;
-}
-
-/*CHILDREN OF .LOGO*/
-.sunsvg {
-	z-index: 1;
-	position: relative;
+	font-family: Raleway;
+	font-size: 6px;
+	margin-top: 38%;
+	margin-bottom: 50%;
 }
 
 /*FLEX ITEM FROM .MACHINEWRAPPER*/
@@ -185,15 +191,30 @@ h1 {
 	-webkit-box-flex: 1;
 	    -ms-flex: 1;
 	        flex: 1;
+
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
 }
 
 /*CHILD OF .KNOBBOX, CLASS GIVEN WITHIN SVG CODE*/
 .knobsvg {
 	max-height: 180px;
-	/*padding: 5%;*/
+	padding: 5%;
+	width: 100%;
 }
 
 /*CHILD OF .KNOBBOX*/
+.labelwrapper {
+	width: 100%;
+
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+/*CHILD OF .LABELWRAPPER*/
 .label {
 	background-color: black;
 	color: white;
@@ -203,14 +224,17 @@ h1 {
 	margin-top: 5px;
 	line-height: 50%;
 	font-family: Raleway;
+	width: 100%;
+}
+
+/*CHILD OF .LABELWRAPPER*/
+.Slider {
+	padding-top: 5%;
+	width: 100%;
 }
 
 /*STYLING INPUT SLIDER, ORIGINAL CODE TAKEN FROM 
 https://codepen.io/jacoba/pen/wWQKZw*/
-
-.Slider {
-	padding-top: 5%;
-}
 
 input[type=range]{
 	padding-top: 10%;
