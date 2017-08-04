@@ -132,7 +132,7 @@ class Knob extends Component {
 						  			transform={`rotate(${rotation},102,97)`}
 						  	/>
 						  <circle 	id="svg_6" 
-						  			stroke="#DFB9A8" 
+						  			stroke="#f7f714" 
 						  			fill-opacity="0" 
 						  			r="32.027023" 
 						  			cy="101.310732" 
@@ -141,17 +141,10 @@ class Knob extends Component {
 						  			strokeLinejoin="null" 
 						  			strokeDasharray="null" 
 						  			strokeWidth="3" 
-						  			fill="#BF7251"/>
+						  			fill="#f7f714"/>
 						</g>
 					</svg>
-
-					<div className="label">{this.props.name}</div>
-				
-					<div className="Slider">
-							<input type="range" value={this.props.value} min="0" max="5" onChange={this.handleChange}/>
-					</div>
 				</div>
-
 		)
 	}
 }

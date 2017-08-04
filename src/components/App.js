@@ -35,6 +35,7 @@ class App extends Component {
 	
 	render() {
 		return (
+			
 			<div className="machinewrapper">
 
 				<div className="machinearea">
@@ -46,23 +47,50 @@ class App extends Component {
 					</div>
 
 					<div className="machine">
+
 							<div className="Knobbox">
 								<Knob name="Rainproof" value={this.state.proof} onChange={this.changeProof}/>
-								<Knob name="Touristzone" value={this.state.tourist} onChange={this.changeTourist}/>
-								<Knob name="Pricelevel" value={this.state.price} onChange={this.changePrice}/>
+								<div className="label">Rainproof</div>
+								<div className="Slider">
+									<input type="range" value={this.state.proof} min="0" max="5" onChange={this.changeProof}/>
+								</div>
 							</div>
+
+							<div class="Knobbox">
+								<Knob name="Touristzone" value={this.state.tourist} onChange={this.changeTourist}/>
+								<div className="label">Tourist</div>
+								<div className="Slider">
+									<input type="range" value={this.state.tourist} min="0" max="5" onChange={this.changeTourist}/>
+								</div>
+							</div>
+
+							<div class="Knobbox">
+								<Knob name="Pricelevel" value={this.state.price} onChange={this.changePrice}/>
+								<div className="label">Price</div>
+								<div className="Slider">
+									<input type="range" value={this.state.price} min="0" max="5" onChange={this.changePrice}/>
+								</div>
+							</div>
+								
 					</div>
 
 				</div>
 
 				<div className="logo">
-						<svg width="640" height="480" className="sunsvg">
-							 <g>
-									<title>Sun Logo</title>							
-									<ellipse stroke-opacity="0" ry="93" rx="92" id="svg_1" cy="153.64204" cx="268.46022" strokeLinecap="null" strokeLinejoin="null" strokeDasharray="null" strokeWidth="5" stroke="#ffff00" fill="#ffff00"/>
-							 </g>
-						</svg>
+					
+					<div class="logotitle">
+						The Amsterdam Sun Machine
+					</div>
+
+					<svg viewBox="0 0 49.7 49.7" className="sunsvg">
+						 <g>
+								<title>Sun Logo</title>							
+								<circle cx="24.85" cy="24.85" r="24.85" fill="#ffff00"/>
+						 </g>
+					</svg>
+
 				</div>
+
 			</div>
 		);
 	}
