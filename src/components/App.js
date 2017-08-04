@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import './style.css';
 import Result from './Result';
 import Knob from './Knob';
+import Knobbox from './Knobbox';
 import DATA from '../sunspots'
 
 class App extends Component {
@@ -47,31 +48,11 @@ class App extends Component {
 					</div>
 
 					<div className="machine">
+							<Knobbox name="Touristzone" value={this.state.tourist} onChange={this.changeTourist}/>
+						
+							<Knobbox name="Price" value={this.state.price} onChange={this.changePrice}/>
 
-							<div className="Knobbox">
-								<Knob name="Rainproof" value={this.state.proof} onChange={this.changeProof}/>
-								<div className="label">Rainproof</div>
-								<div className="Slider">
-									<input type="range" value={this.state.proof} min="0" max="5" onChange={this.changeProof}/>
-								</div>
-							</div>
-
-							<div class="Knobbox">
-								<Knob name="Touristzone" value={this.state.tourist} onChange={this.changeTourist}/>
-								<div className="label">Tourist</div>
-								<div className="Slider">
-									<input type="range" value={this.state.tourist} min="0" max="5" onChange={this.changeTourist}/>
-								</div>
-							</div>
-
-							<div class="Knobbox">
-								<Knob name="Pricelevel" value={this.state.price} onChange={this.changePrice}/>
-								<div className="label">Price</div>
-								<div className="Slider">
-									<input type="range" value={this.state.price} min="0" max="5" onChange={this.changePrice}/>
-								</div>
-							</div>
-								
+							<Knobbox name="Rainproof" value={this.state.proof} onChange={this.changeProof}/>															
 					</div>
 
 				</div>
