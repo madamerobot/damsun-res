@@ -6,31 +6,13 @@ import Result from './Result';
 import Knob from './Knob';
 import DATA from '../sunspots'
 
+
+
 class Knobbox extends Component {
 
-	constructor(props){   
-		super(props);
-
-		this.state = {tourist: '4', 
-									price: '4', 
-									proof: '4'
-								};
-
-		this.changeTourist = this.changeTourist.bind(this);
-		this.changePrice = this.changePrice.bind(this);
-		this.changeProof = this.changeProof.bind(this);
-	}
-
-	changeTourist (value) {
-		this.setState({ tourist: value })
-	}
-
-	changePrice (value) {
-		this.setState({ price: value })
-	}
-
-	changeProof (value) {
-		this.setState({ proof: value })
+	handleChange(event){
+		const value = event.target.value;
+		this.props.onChange(value);
 	}
 	
 	render() {
@@ -38,12 +20,12 @@ class Knobbox extends Component {
 			
 			<div className="Knobbox">
 								
-				<Knob name={this.props.name} value={this.state.value} onChange={this.props.onChange}/>
+				<Knob name={this.props.name} value={this.props.value} onChange={this.props.onChange}/>
 				
 				<div className="label">Rainproof</div>
 				
 				<div className="Slider">
-					<input type="range" value={this.state.value} min="0" max="5" onChange={this.handleChange}/>
+					<input type="range" value={this.props.value} min="0" max="5" onChange={this.handleChange}/>
 				</div>
 
 			</div>
