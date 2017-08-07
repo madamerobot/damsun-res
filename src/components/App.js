@@ -42,6 +42,13 @@ class App extends Component {
 				<div className="machinearea">
 					
 					<div className="resultpaper">
+
+						<div className="introtext">
+							<p>This is your personal assistant to optimise each day of sun you'll get (we know they are precious).
+							Just change the settings below and enjoy it while it lasts.
+							</p>
+						</div>
+
 						<div className="results">
 							<Result data={DATA} tourist={this.state.tourist} price={this.state.price} proof={this.state.proof} />
 						</div>
