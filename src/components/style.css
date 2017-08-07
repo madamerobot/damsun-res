@@ -30,7 +30,7 @@ p {
 
 /*LAYOUT AND FLEX*/
 
-@media only screen and (max-width:816px){
+@media only screen and (max-width:768px){
 
 	.container {
 		-webkit-box-orient: horizontal;

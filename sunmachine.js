@@ -12,9 +12,6 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-app.get('/about', function (req,res){
-	res.render("about");
-})
 //---------PORT CONFIG-----------------
 
 var server = app.listen(5000, () => {
