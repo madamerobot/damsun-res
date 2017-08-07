@@ -36,7 +36,7 @@ p {
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: row;
-		        flex-direction: row;
+		        flex-direction: row !important;
 	}
 
 	/*FLEX CONTAINER FOR .MACHINEAREA AND LOGO*/
@@ -57,17 +57,11 @@ p {
 		-webkit-box-ordinal-group: 3;
 		    -ms-flex-order: 2;
 		        order: 2;
-	}
-}
-
-@media only screen and (max-width:768px) {
-	
-	.machinearea {
 		max-width: auto !important;
 	}
 
 	.knobsvg {
-		display: none;
+		display: none !important;
 	}
 }
 
